@@ -1,6 +1,7 @@
 # Easy Docs with showcase-chirpy Theme
 
-✨ **Create beautiful docs in GitHub Pages for your projects — all written in simple Markdown.**
+✨ **Create beautiful docs in GitHub Pages for your projects — all written in
+simple Markdown.**
 
 [![GitHub Pages](https://img.shields.io/badge/docs-online-blue)](https://jsurrea.github.io/showcase-chirpy-easy-docs/)
 
@@ -8,9 +9,13 @@
 
 ## About
 
-`showcase-chirpy-easy-docs` is a GitHub Action-powered documentation setup that lets you build elegant documentation websites from Markdown — and publish them automatically using GitHub Pages.
+`showcase-chirpy-easy-docs` is a GitHub Action-powered documentation setup that
+lets you build elegant documentation websites from Markdown — and publish them
+automatically using GitHub Pages.
 
-It's powered by a customized streamlined version of the [Chirpy Jekyll theme](https://github.com/jsurrea/showcase-chirpy-theme), so your docs will look great with minimal setup.
+It's powered by a customized streamlined version of the
+[Chirpy Jekyll theme](https://github.com/jsurrea/showcase-chirpy-theme), so your
+docs will look great with minimal setup.
 
 ---
 
