@@ -10,7 +10,7 @@ simple Markdown.**
 ## About
 
 `showcase-chirpy-easy-docs` is a GitHub Action-powered documentation setup that
-lets you build elegant documentation websites from Markdown — and publish them
+lets you build elegant documentation sites from Markdown — and publish them
 automatically using GitHub Pages.
 
 It's powered by a customized streamlined version of the
