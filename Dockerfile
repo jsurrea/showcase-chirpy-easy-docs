@@ -1,24 +1,20 @@
 # Set the base image to use for subsequent instructions
 FROM node:slim
 
-# Set the environment variables for the build
-ENV GIT_VERSION=2.49.0 \
-    RUBY_VERSION=3.4.2 \
-    BUNDLER_VERSION=2.6.7 \
-    JEKYLL_VERSION=4.4.1 \
-    NPM_VERSION=11.3.0
-
 # Install dependencies
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    git=${GIT_VERSION} \
-    ruby-full=${RUBY_VERSION} \
-    build-essential=12.10ubuntu1 \
-    zlib1g-dev=1:1.2.11.dfsg-2ubuntu9
-RUN gem install bundler -v ${BUNDLER_VERSION} && \
-    gem install jekyll -v ${JEKYLL_VERSION}
-RUN npm install -g npm@${NPM_VERSION}
-RUN rm -rf /var/lib/apt/lists/*
+    git \
+    ruby-full \
+    build-essential \
+    zlib1g-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+# Update npm to the latest version
+RUN npm install -g npm@latest
+
+# Install bundler and jekyll
+RUN gem install bundler jekyll
 
 # Setup working directory
 WORKDIR /app
