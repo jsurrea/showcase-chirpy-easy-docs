@@ -1,6 +1,6 @@
-import * as exec from '@actions/exec';
-import * as io from '@actions/io';
-import { logInfo } from '../logger.js';
+import * as exec from '@actions/exec'
+import * as io from '@actions/io'
+import { logInfo } from '../logger.js'
 
 /**
  * Clone a git repository into a target directory.
@@ -8,21 +8,25 @@ import { logInfo } from '../logger.js';
  * @param targetDir Absolute path to clone the repo into
  * @param ref Optional: tag, branch or commit to checkout
  */
-export async function cloneRepo(repo: string, targetDir: string, ref?: string): Promise<void> {
-  const repoUrl = `https://github.com/${repo}.git`;
+export async function cloneRepo(
+  repo: string,
+  targetDir: string,
+  ref?: string
+): Promise<void> {
+  const repoUrl = `https://github.com/${repo}.git`
 
-  await io.mkdirP(targetDir);
+  await io.mkdirP(targetDir)
 
-  const args = ['clone', repoUrl, targetDir, '--single-branch', '--depth', '1'];
+  const args = ['clone', repoUrl, targetDir, '--single-branch', '--depth', '1']
   if (ref) {
-    args.push('--branch', ref);
+    args.push('--branch', ref)
   }
 
-  await exec.exec('git', args);
+  await exec.exec('git', args)
 
   if (ref) {
-    await exec.exec('git', ['checkout', ref], { cwd: targetDir });
+    await exec.exec('git', ['checkout', ref], { cwd: targetDir })
   }
 
-  logInfo(`Repository ${repo} cloned to ${targetDir}`);
+  logInfo(`Repository ${repo} cloned to ${targetDir}`)
 }

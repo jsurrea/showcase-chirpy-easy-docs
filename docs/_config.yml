@@ -18,12 +18,14 @@ title: Showcase Chirpy Easy Docs # TODO: Change the main title
 
 tagline: GitHub Action to generate docs # TODO: Change the tagline that will display as the subtitle
 
-description: >- # TODO: Change the description that will be used by seo meta and the atom feed
-  Create beautiful docs in GitHub Pages for your projects — all written in simple Markdown.
+description:
+  >- # TODO: Change the description that will be used by seo meta and the atom feed
+  Create beautiful docs in GitHub Pages for your projects — all written in
+  simple Markdown.
 
 # TODO: Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://jsurrea.github.io"
+url: 'https://jsurrea.github.io'
 
 github:
   username: jsurrea # TODO: Change to your GitHub username
@@ -101,13 +103,13 @@ cdn:
 # TODO: Add the avatar on sidebar, support local or CORS resources
 # To use your GitHub profile picture, you can use the following format:
 # avatar: "https://github.com/username.png"
-avatar: "https://chirpy-img.netlify.app/commons/avatar.jpg"
+avatar: 'https://chirpy-img.netlify.app/commons/avatar.jpg'
 
 # TODO: Add the URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
 # To use your GitHub profile picture, you can use the following format:
 # social_preview_image: "https://github.com/username.png"
-social_preview_image: "https://chirpy-img.netlify.app/commons/social_preview_image.jpg"
+social_preview_image: 'https://chirpy-img.netlify.app/commons/social_preview_image.jpg'
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -158,12 +160,12 @@ pwa:
 #     baseurl: ""
 #   If your GitHub Pages site is <username>.github.io/<repository>, use:
 #     baseurl: "/<repository>/"
-baseurl: "/showcase-chirpy-easy-docs/"
+baseurl: '/showcase-chirpy-easy-docs/'
 
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
+  footnote_backlink: '&#8617;&#xfe0e;'
   syntax_highlighter: rouge
   syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
@@ -181,7 +183,7 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: '' # An empty string here means all files in the project
       type: posts
     values:
       layout: post
@@ -195,7 +197,7 @@ defaults:
     values:
       comments: false
   - scope:
-      path: ""
+      path: ''
       type: tabs # see `site.collections`
     values:
       layout: page
@@ -215,15 +217,15 @@ compress_html:
     envs: [development]
 
 exclude:
-  - "*.gem"
-  - "*.gemspec"
+  - '*.gem'
+  - '*.gemspec'
   - docs
   - tools
   - README.md
   - LICENSE
   - purgecss.js
   - rollup.config.js
-  - "package*.json"
+  - 'package*.json'
 
 jekyll-archives:
   enabled: [categories, tags]
@@ -233,4 +235,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-  

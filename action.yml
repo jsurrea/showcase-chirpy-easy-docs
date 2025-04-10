@@ -1,16 +1,18 @@
-name: "showcase-chirpy-easy-docs"
-description: "Create beautiful docs in GitHub Pages for your projects — all written in simple Markdown."
-author: "jsurrea"
+name: 'showcase-chirpy-easy-docs'
+description:
+  'Create beautiful docs in GitHub Pages for your projects — all written in
+  simple Markdown.'
+author: 'jsurrea'
 branding:
-  icon: "book-open"
-  color: "blue"
+  icon: 'book-open'
+  color: 'blue'
 
 inputs:
   docs-dir:
-    description: "Path to the documentation directory in the source repository"
+    description: 'Path to the documentation directory in the source repository'
     required: false
-    default: "docs"
+    default: 'docs'
 
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: 'docker'
+  image: 'Dockerfile'
