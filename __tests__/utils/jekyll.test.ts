@@ -36,15 +36,12 @@ describe('prepareThemeDirectory', () => {
     expect(exec).toHaveBeenCalledWith('npm', ['run', 'build'], {
       cwd: themeDir
     })
+    expect(exec).toHaveBeenCalledWith('bundle', ['install'], {
+      cwd: themeDir
+    })
     expect(exec).toHaveBeenCalledWith(
       'bundle',
-      [
-        'exec',
-        'jekyll',
-        'build',
-        '-d',
-        '_site${{ steps.pages.outputs.base_path }}'
-      ],
+      ['exec', 'jekyll', 'build', '-d', '_site'],
       { cwd: themeDir }
     )
   })

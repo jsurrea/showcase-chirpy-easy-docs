@@ -27296,8 +27296,7 @@ async function prepareThemeDirectory(themeDir) {
     await execExports.exec('npm', ['run', 'build'], { cwd: themeDir });
     // Install Ruby gems
     await execExports.exec('bundle', ['install'], { cwd: themeDir });
-    const sitePath = '_site${{ steps.pages.outputs.base_path }}';
-    await execExports.exec('bundle', ['exec', 'jekyll', 'build', '-d', sitePath], {
+    await execExports.exec('bundle', ['exec', 'jekyll', 'build', '-d', '_site'], {
         cwd: themeDir
     });
     logInfo('Jekyll site built successfully.');
