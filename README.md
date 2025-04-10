@@ -4,6 +4,10 @@
 simple Markdown.**
 
 [![GitHub Pages](https://img.shields.io/badge/docs-online-blue)](https://jsurrea.github.io/showcase-chirpy-easy-docs/)
+[![GitHub Super-Linter](https://github.com/jsurrea/showcase-chirpy-easy-docs/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
+![Check `dist/`](https://github.com/jsurrea/showcase-chirpy-easy-docs/actions/workflows/check-dist.yml/badge.svg)
+![CI](https://github.com/jsurrea/showcase-chirpy-easy-docs/actions/workflows/ci.yml/badge.svg)
+[![Code Coverage](./badges/coverage.svg)](./badges/coverage.svg)
 
 ---
 
