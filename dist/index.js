@@ -27294,6 +27294,8 @@ async function cloneRepo(repo, targetDir, ref) {
 async function prepareThemeDirectory(themeDir) {
     await execExports.exec('npm', ['install'], { cwd: themeDir });
     await execExports.exec('npm', ['run', 'build'], { cwd: themeDir });
+    // Install Ruby gems
+    await execExports.exec('bundle', ['install'], { cwd: themeDir });
     const sitePath = '_site${{ steps.pages.outputs.base_path }}';
     await execExports.exec('bundle', ['exec', 'jekyll', 'build', '-d', sitePath], {
         cwd: themeDir
