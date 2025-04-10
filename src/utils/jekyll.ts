@@ -11,10 +11,7 @@ export async function prepareThemeDirectory(themeDir: string): Promise<void> {
   // Install Ruby gems
   await exec.exec('bundle', ['install'], { cwd: themeDir })
 
-  const sitePath = '_site${{ steps.pages.outputs.base_path }}'
-  await exec.exec('bundle', ['exec', 'jekyll', 'build', '-d', sitePath], {
-    cwd: themeDir
-  })
+  await exec.exec('bundle', ['exec', 'jekyll', 'build', '-d', '_site'], { cwd: themeDir });
 
   logInfo('Jekyll site built successfully.')
 }
