@@ -1,21 +1,16 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: "showcase-chirpy-easy-docs"
+description: "Create beautiful docs in GitHub Pages for your projects — all written in simple Markdown."
+author: "jsurrea"
+branding:
+  icon: "book-open"
+  color: "blue"
 
-# Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
-    required: true
-    default: '1000'
-
-# Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
+  docs-dir:
+    description: "Path to the documentation directory in the source repository"
+    required: false
+    default: "docs"
 
 runs:
-  using: docker
-  image: Dockerfile
-  env:
-    INPUT_MILLISECONDS: ${{ inputs.milliseconds }}
+  using: "docker"
+  image: "Dockerfile"
