@@ -74,6 +74,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
 ```
+{: file=".github/workflows/deploy-docs.yml" }
 
 ---
 

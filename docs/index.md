@@ -15,14 +15,14 @@ documentation site using the awesome
 No Jekyll config headaches, no custom deploy scripts — just write your `.md`
 files and go.
 
-> This exact site was built using this action. You're not just reading the docs
-> — you're _in_ the docs. {: .prompt-tip }
+> This exact site was built using this action. You're not just reading the docs — you're _in_ the docs. 
+{: .prompt-tip }
 
 Need to learn more about customizing the theme, markdown options, or adding
 navigation tabs? Head over to the
 [Theme Docs](https://jsurrea.github.io/showcase-chirpy-theme/).
 
 Wanna use this in your own repo? Check out the tutorial for
-[Setting up your own Workflow](/workflow) to get started in seconds.
+[Setting up your own Workflow](/showcase-chirpy-easy-docs/workflow) to get started in seconds.
 
 Cheers! 🍻 And welcome to easier, prettier documentation.
