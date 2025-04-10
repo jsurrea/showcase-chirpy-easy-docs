@@ -14,11 +14,11 @@ RUN apt-get update && \
     git=${GIT_VERSION} \
     ruby-full=${RUBY_VERSION} \
     build-essential=12.10ubuntu1 \
-    zlib1g-dev=1:1.2.11.dfsg-2ubuntu9 && \
-    rm -rf /var/lib/apt/lists/*
+    zlib1g-dev=1:1.2.11.dfsg-2ubuntu9
 RUN gem install bundler -v ${BUNDLER_VERSION} && \
     gem install jekyll -v ${JEKYLL_VERSION}
 RUN npm install -g npm@${NPM_VERSION}
+RUN rm -rf /var/lib/apt/lists/*
 
 # Setup working directory
 WORKDIR /app
